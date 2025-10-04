@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Pedidos Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Loja Online</h1>
+    <p>Escolha seus produtos e finalize pelo WhatsApp</p>
+  </header>
+
+  <main>
+    <section id="produtos">
+      <h2>Produtos</h2>
+      <div class="produto">
+        <h3>Pizza</h3>
+        <p>R$ 35,00</p>
+        <button onclick="adicionarCarrinho('Pizza', 35)">Adicionar</button>
+      </div>
+      <div class="produto">
+        <h3>Hambúrguer</h3>
+        <p>R$ 20,00</p>
+        <button onclick="adicionarCarrinho('Hambúrguer', 20)">Adicionar</button>
+      </div>
+      <div class="produto">
+        <h3>Refrigerante</h3>
+        <p>R$ 7,00</p>
+        <button onclick="adicionarCarrinho('Refrigerante', 7)">Adicionar</button>
+      </div>
+    </section>
+
+    <section id="carrinho">
+      <h2>Carrinho</h2>
+      <ul id="lista-carrinho"></ul>
+      <p id="total">Total: R$ 0,00</p>
+      <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
